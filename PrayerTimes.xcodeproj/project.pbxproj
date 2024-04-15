@@ -1,0 +1,682 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		840DFB4D2BB96F1E00DC6123 /* QiblaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840DFB4C2BB96F1E00DC6123 /* QiblaViewController.swift */; };
+		84677C3B2BCBB6B000443A03 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84677C3A2BCBB6B000443A03 /* WidgetKit.framework */; };
+		84677C3D2BCBB6B000443A03 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84677C3C2BCBB6B000443A03 /* SwiftUI.framework */; };
+		84677C402BCBB6B000443A03 /* PrayerWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84677C3F2BCBB6B000443A03 /* PrayerWidgetBundle.swift */; };
+		84677C422BCBB6B000443A03 /* PrayerWidgetLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84677C412BCBB6B000443A03 /* PrayerWidgetLiveActivity.swift */; };
+		84677C442BCBB6B000443A03 /* PrayerWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84677C432BCBB6B000443A03 /* PrayerWidget.swift */; };
+		84677C462BCBB6B000443A03 /* AppIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84677C452BCBB6B000443A03 /* AppIntent.swift */; };
+		84677C482BCBB6B400443A03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84677C472BCBB6B400443A03 /* Assets.xcassets */; };
+		84677C4C2BCBB6B400443A03 /* PrayerWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 84677C382BCBB6B000443A03 /* PrayerWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		8485F8062BB9A75E0054429C /* BackgroundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8485F8052BB9A75E0054429C /* BackgroundManager.swift */; };
+		8485F8082BB9A8930054429C /* LocalNotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8485F8072BB9A8930054429C /* LocalNotificationManager.swift */; };
+		84A2AF432BAEF189001DE994 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A2AF422BAEF189001DE994 /* AppDelegate.swift */; };
+		84A2AF452BAEF189001DE994 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A2AF442BAEF189001DE994 /* SceneDelegate.swift */; };
+		84A2AF4A2BAEF189001DE994 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84A2AF482BAEF189001DE994 /* Main.storyboard */; };
+		84A2AF4C2BAEF18F001DE994 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84A2AF4B2BAEF18F001DE994 /* Assets.xcassets */; };
+		84A2AF4F2BAEF18F001DE994 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84A2AF4D2BAEF18F001DE994 /* LaunchScreen.storyboard */; };
+		84A2AF5A2BAEF7CD001DE994 /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A2AF592BAEF7CD001DE994 /* LaunchViewController.swift */; };
+		84A2AF5C2BAEF854001DE994 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A2AF5B2BAEF854001DE994 /* HomeViewController.swift */; };
+		84A2AF5E2BAEF878001DE994 /* HomeNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A2AF5D2BAEF878001DE994 /* HomeNavigationController.swift */; };
+		84A2AF612BAF07D6001DE994 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A2AF602BAF07D6001DE994 /* Extensions.swift */; };
+		84A2AF652BB03BBA001DE994 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A2AF642BB03BBA001DE994 /* LocationManager.swift */; };
+		84B4CF0A2BBDD71C00EFBF86 /* PrayerNotificationOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B4CF092BBDD71C00EFBF86 /* PrayerNotificationOperation.swift */; };
+		84B4CF0D2BBF0E6100EFBF86 /* TasbihViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B4CF0C2BBF0E6100EFBF86 /* TasbihViewController.swift */; };
+		84BCF0822BBC770300FE87DF /* beep.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 84BCF0812BBC770300FE87DF /* beep.mp3 */; };
+		84BEDFED2BB088DF00CE0888 /* PrayerTimingsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BEDFEC2BB088DF00CE0888 /* PrayerTimingsResponse.swift */; };
+		84F4FF5C2BC3045000BA9C61 /* piano_click.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 84F4FF5B2BC3045000BA9C61 /* piano_click.mp3 */; };
+		84F4FF622BC3101900BA9C61 /* beep_once.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 84F4FF612BC3101900BA9C61 /* beep_once.mp3 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		84677C4A2BCBB6B400443A03 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84A2AF372BAEF189001DE994 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84677C372BCBB6B000443A03;
+			remoteInfo = PrayerWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		84677C4D2BCBB6B400443A03 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				84677C4C2BCBB6B400443A03 /* PrayerWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		840DFB4C2BB96F1E00DC6123 /* QiblaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiblaViewController.swift; sourceTree = "<group>"; };
+		84677C382BCBB6B000443A03 /* PrayerWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = PrayerWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		84677C3A2BCBB6B000443A03 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		84677C3C2BCBB6B000443A03 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		84677C3F2BCBB6B000443A03 /* PrayerWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrayerWidgetBundle.swift; sourceTree = "<group>"; };
+		84677C412BCBB6B000443A03 /* PrayerWidgetLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrayerWidgetLiveActivity.swift; sourceTree = "<group>"; };
+		84677C432BCBB6B000443A03 /* PrayerWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrayerWidget.swift; sourceTree = "<group>"; };
+		84677C452BCBB6B000443A03 /* AppIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIntent.swift; sourceTree = "<group>"; };
+		84677C472BCBB6B400443A03 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		84677C492BCBB6B400443A03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8485F8052BB9A75E0054429C /* BackgroundManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundManager.swift; sourceTree = "<group>"; };
+		8485F8072BB9A8930054429C /* LocalNotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNotificationManager.swift; sourceTree = "<group>"; };
+		84A2AF3F2BAEF189001DE994 /* PrayerTimes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PrayerTimes.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		84A2AF422BAEF189001DE994 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		84A2AF442BAEF189001DE994 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		84A2AF492BAEF189001DE994 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		84A2AF4B2BAEF18F001DE994 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		84A2AF4E2BAEF18F001DE994 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		84A2AF502BAEF18F001DE994 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84A2AF592BAEF7CD001DE994 /* LaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
+		84A2AF5B2BAEF854001DE994 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		84A2AF5D2BAEF878001DE994 /* HomeNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeNavigationController.swift; sourceTree = "<group>"; };
+		84A2AF602BAF07D6001DE994 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		84A2AF642BB03BBA001DE994 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		84B4CF092BBDD71C00EFBF86 /* PrayerNotificationOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrayerNotificationOperation.swift; sourceTree = "<group>"; };
+		84B4CF0C2BBF0E6100EFBF86 /* TasbihViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasbihViewController.swift; sourceTree = "<group>"; };
+		84BCF0812BBC770300FE87DF /* beep.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = beep.mp3; sourceTree = "<group>"; };
+		84BEDFEC2BB088DF00CE0888 /* PrayerTimingsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrayerTimingsResponse.swift; sourceTree = "<group>"; };
+		84F4FF5B2BC3045000BA9C61 /* piano_click.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = piano_click.mp3; sourceTree = "<group>"; };
+		84F4FF612BC3101900BA9C61 /* beep_once.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = beep_once.mp3; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		84677C352BCBB6B000443A03 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84677C3D2BCBB6B000443A03 /* SwiftUI.framework in Frameworks */,
+				84677C3B2BCBB6B000443A03 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84A2AF3C2BAEF189001DE994 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		840DFB4B2BB96EF700DC6123 /* Qibla */ = {
+			isa = PBXGroup;
+			children = (
+				840DFB4C2BB96F1E00DC6123 /* QiblaViewController.swift */,
+			);
+			path = Qibla;
+			sourceTree = "<group>";
+		};
+		84677C392BCBB6B000443A03 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				84677C3A2BCBB6B000443A03 /* WidgetKit.framework */,
+				84677C3C2BCBB6B000443A03 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		84677C3E2BCBB6B000443A03 /* PrayerWidget */ = {
+			isa = PBXGroup;
+			children = (
+				84677C3F2BCBB6B000443A03 /* PrayerWidgetBundle.swift */,
+				84677C412BCBB6B000443A03 /* PrayerWidgetLiveActivity.swift */,
+				84677C432BCBB6B000443A03 /* PrayerWidget.swift */,
+				84677C452BCBB6B000443A03 /* AppIntent.swift */,
+				84677C472BCBB6B400443A03 /* Assets.xcassets */,
+				84677C492BCBB6B400443A03 /* Info.plist */,
+			);
+			path = PrayerWidget;
+			sourceTree = "<group>";
+		};
+		84A2AF362BAEF189001DE994 = {
+			isa = PBXGroup;
+			children = (
+				84A2AF412BAEF189001DE994 /* PrayerTimes */,
+				84677C3E2BCBB6B000443A03 /* PrayerWidget */,
+				84677C392BCBB6B000443A03 /* Frameworks */,
+				84A2AF402BAEF189001DE994 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		84A2AF402BAEF189001DE994 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84A2AF3F2BAEF189001DE994 /* PrayerTimes.app */,
+				84677C382BCBB6B000443A03 /* PrayerWidgetExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		84A2AF412BAEF189001DE994 /* PrayerTimes */ = {
+			isa = PBXGroup;
+			children = (
+				84F4FF612BC3101900BA9C61 /* beep_once.mp3 */,
+				84F4FF5B2BC3045000BA9C61 /* piano_click.mp3 */,
+				84BCF0812BBC770300FE87DF /* beep.mp3 */,
+				84A2AF5F2BAF07BF001DE994 /* Helper */,
+				84A2AF562BAEF4FB001DE994 /* Modules */,
+				84A2AF422BAEF189001DE994 /* AppDelegate.swift */,
+				84A2AF442BAEF189001DE994 /* SceneDelegate.swift */,
+				84A2AF4B2BAEF18F001DE994 /* Assets.xcassets */,
+				84A2AF4D2BAEF18F001DE994 /* LaunchScreen.storyboard */,
+				84A2AF502BAEF18F001DE994 /* Info.plist */,
+			);
+			path = PrayerTimes;
+			sourceTree = "<group>";
+		};
+		84A2AF562BAEF4FB001DE994 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				84B4CF0B2BBF0E4900EFBF86 /* Tasbih */,
+				840DFB4B2BB96EF700DC6123 /* Qibla */,
+				84A2AF582BAEF7B7001DE994 /* Launch */,
+				84A2AF572BAEF517001DE994 /* Home */,
+				84A2AF482BAEF189001DE994 /* Main.storyboard */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		84A2AF572BAEF517001DE994 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				84A2AF5B2BAEF854001DE994 /* HomeViewController.swift */,
+				84A2AF5D2BAEF878001DE994 /* HomeNavigationController.swift */,
+				84BEDFEC2BB088DF00CE0888 /* PrayerTimingsResponse.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		84A2AF582BAEF7B7001DE994 /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				84A2AF592BAEF7CD001DE994 /* LaunchViewController.swift */,
+			);
+			path = Launch;
+			sourceTree = "<group>";
+		};
+		84A2AF5F2BAF07BF001DE994 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				84A2AF602BAF07D6001DE994 /* Extensions.swift */,
+				84A2AF642BB03BBA001DE994 /* LocationManager.swift */,
+				8485F8052BB9A75E0054429C /* BackgroundManager.swift */,
+				8485F8072BB9A8930054429C /* LocalNotificationManager.swift */,
+				84B4CF092BBDD71C00EFBF86 /* PrayerNotificationOperation.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		84B4CF0B2BBF0E4900EFBF86 /* Tasbih */ = {
+			isa = PBXGroup;
+			children = (
+				84B4CF0C2BBF0E6100EFBF86 /* TasbihViewController.swift */,
+			);
+			path = Tasbih;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		84677C372BCBB6B000443A03 /* PrayerWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84677C502BCBB6B400443A03 /* Build configuration list for PBXNativeTarget "PrayerWidgetExtension" */;
+			buildPhases = (
+				84677C342BCBB6B000443A03 /* Sources */,
+				84677C352BCBB6B000443A03 /* Frameworks */,
+				84677C362BCBB6B000443A03 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PrayerWidgetExtension;
+			productName = PrayerWidgetExtension;
+			productReference = 84677C382BCBB6B000443A03 /* PrayerWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		84A2AF3E2BAEF189001DE994 /* PrayerTimes */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84A2AF532BAEF18F001DE994 /* Build configuration list for PBXNativeTarget "PrayerTimes" */;
+			buildPhases = (
+				84A2AF3B2BAEF189001DE994 /* Sources */,
+				84A2AF3C2BAEF189001DE994 /* Frameworks */,
+				84A2AF3D2BAEF189001DE994 /* Resources */,
+				84677C4D2BCBB6B400443A03 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				84677C4B2BCBB6B400443A03 /* PBXTargetDependency */,
+			);
+			name = PrayerTimes;
+			productName = PrayerTimes;
+			productReference = 84A2AF3F2BAEF189001DE994 /* PrayerTimes.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		84A2AF372BAEF189001DE994 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					84677C372BCBB6B000443A03 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					84A2AF3E2BAEF189001DE994 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = 84A2AF3A2BAEF189001DE994 /* Build configuration list for PBXProject "PrayerTimes" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 84A2AF362BAEF189001DE994;
+			productRefGroup = 84A2AF402BAEF189001DE994 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				84A2AF3E2BAEF189001DE994 /* PrayerTimes */,
+				84677C372BCBB6B000443A03 /* PrayerWidgetExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		84677C362BCBB6B000443A03 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84677C482BCBB6B400443A03 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84A2AF3D2BAEF189001DE994 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84A2AF4F2BAEF18F001DE994 /* LaunchScreen.storyboard in Resources */,
+				84A2AF4C2BAEF18F001DE994 /* Assets.xcassets in Resources */,
+				84F4FF622BC3101900BA9C61 /* beep_once.mp3 in Resources */,
+				84BCF0822BBC770300FE87DF /* beep.mp3 in Resources */,
+				84F4FF5C2BC3045000BA9C61 /* piano_click.mp3 in Resources */,
+				84A2AF4A2BAEF189001DE994 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		84677C342BCBB6B000443A03 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84677C402BCBB6B000443A03 /* PrayerWidgetBundle.swift in Sources */,
+				84677C462BCBB6B000443A03 /* AppIntent.swift in Sources */,
+				84677C442BCBB6B000443A03 /* PrayerWidget.swift in Sources */,
+				84677C422BCBB6B000443A03 /* PrayerWidgetLiveActivity.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84A2AF3B2BAEF189001DE994 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8485F8082BB9A8930054429C /* LocalNotificationManager.swift in Sources */,
+				84B4CF0A2BBDD71C00EFBF86 /* PrayerNotificationOperation.swift in Sources */,
+				84A2AF5E2BAEF878001DE994 /* HomeNavigationController.swift in Sources */,
+				84A2AF612BAF07D6001DE994 /* Extensions.swift in Sources */,
+				84A2AF432BAEF189001DE994 /* AppDelegate.swift in Sources */,
+				840DFB4D2BB96F1E00DC6123 /* QiblaViewController.swift in Sources */,
+				84BEDFED2BB088DF00CE0888 /* PrayerTimingsResponse.swift in Sources */,
+				84B4CF0D2BBF0E6100EFBF86 /* TasbihViewController.swift in Sources */,
+				8485F8062BB9A75E0054429C /* BackgroundManager.swift in Sources */,
+				84A2AF652BB03BBA001DE994 /* LocationManager.swift in Sources */,
+				84A2AF5A2BAEF7CD001DE994 /* LaunchViewController.swift in Sources */,
+				84A2AF452BAEF189001DE994 /* SceneDelegate.swift in Sources */,
+				84A2AF5C2BAEF854001DE994 /* HomeViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		84677C4B2BCBB6B400443A03 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84677C372BCBB6B000443A03 /* PrayerWidgetExtension */;
+			targetProxy = 84677C4A2BCBB6B400443A03 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		84A2AF482BAEF189001DE994 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84A2AF492BAEF189001DE994 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		84A2AF4D2BAEF18F001DE994 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84A2AF4E2BAEF18F001DE994 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		84677C4E2BCBB6B400443A03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 7H4A2UH29H;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PrayerWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = PrayerWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.PrayerTimes.PrayerWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = wildcard_dev_max;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		84677C4F2BCBB6B400443A03 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 7H4A2UH29H;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PrayerWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = PrayerWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.PrayerTimes.PrayerWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = wildcard_dev_max;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		84A2AF512BAEF18F001DE994 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		84A2AF522BAEF18F001DE994 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		84A2AF542BAEF18F001DE994 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 7H4A2UH29H;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PrayerTimes/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Prayer Time";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "We need your location to provide location-based services even when the app is in the background.";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "We need your location to provide location-based services continuously.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need your location to provide location-based services while you are using the app.";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.PrayerTimes;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = wildcard_dev_max;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		84A2AF552BAEF18F001DE994 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 7H4A2UH29H;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PrayerTimes/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Prayer Time";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "We need your location to provide location-based services even when the app is in the background.";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "We need your location to provide location-based services continuously.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need your location to provide location-based services while you are using the app.";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.PrayerTimes;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = wildcard_dev_max;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		84677C502BCBB6B400443A03 /* Build configuration list for PBXNativeTarget "PrayerWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84677C4E2BCBB6B400443A03 /* Debug */,
+				84677C4F2BCBB6B400443A03 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84A2AF3A2BAEF189001DE994 /* Build configuration list for PBXProject "PrayerTimes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84A2AF512BAEF18F001DE994 /* Debug */,
+				84A2AF522BAEF18F001DE994 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84A2AF532BAEF18F001DE994 /* Build configuration list for PBXNativeTarget "PrayerTimes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84A2AF542BAEF18F001DE994 /* Debug */,
+				84A2AF552BAEF18F001DE994 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 84A2AF372BAEF189001DE994 /* Project object */;
+}
